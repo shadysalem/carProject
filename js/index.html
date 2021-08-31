@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>project</title>
+  </head>
+  <body>
+    <div class="DataDiv">
+      <div class="wrap">
+        <div class="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="Looking for a movie?"
+            id="text"
+          />
+          <label for=""
+            ><input type="submit" class="searchButton" value=" " id="movie" />
+          </label>
+        </div>
+      </div>
+      <div class="imgs" id="imgs"></div>
+      <div class="content">
+        <div class="information" id="information">
+          <ul>
+            <p class="title" id="title"></p>
+            <hr />
+            <p class="rating" id="rating"></p>
+            <hr />
+            <p class="realeseDate" id="realeseDate"></p>
+          </ul>
+        </div>
+        <div class="taktser">
+          <p class="summary" id="summary"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
