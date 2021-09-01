@@ -13,8 +13,7 @@ const searchResults = async search =>{
 let matchingCars = cars.filter(car=>{
     //stores the car that begins with 'search' hence the "^" and 'gi' in order to accept capital/small letter results as well
     const exp = new RegExp(`^${search}`,'gi');
-    return car.Name.match(exp)  
-    
+    return car.Name.match(exp)
 });
 //clears the array in case the user is not searching for anything
 if(search.length==0){
